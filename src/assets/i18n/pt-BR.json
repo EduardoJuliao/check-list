@@ -1,0 +1,10 @@
+{
+    "MESSAGE":{
+        "SUCCESS": "Sucesso!",
+        "WARNING": "Aviso!",
+        "ERROR": "Erro!",
+        "INFO": "Info",
+        "YES": "Confirma",
+        "NO": "Cancela"
+    }
+}

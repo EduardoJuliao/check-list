@@ -1,1 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~mdi/css/materialdesignicons.min.css";
+@import "~malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
+@import "~izitoast/dist/css/iziToast.min.css";
