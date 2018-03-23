@@ -1,0 +1,25 @@
+
+    <h1>{{name}}</h1>
+    <input type="text" class="form-control add-todo" 
+    placeholder="Add todo" [(ngModel)]="taskName"/>
+    <button class="btn btn-primary" (click)="addTask()">
+        <i class="mdi mdi-table-row-plus-after">
+        </i>Adicionar</button>
+    <button class="btn btn-success">
+        <i class="mdi mdi-check"></i>Mark all as done
+    </button>
+
+    <hr>
+    <ul class="list-unstyled">
+        <li class="ui-state-default" *ngFor="let task of tasks">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="" />{{task.name}}</label>
+            </div>
+        </li>
+    </ul>
+    <div class="todo-footer">
+        <strong>
+            <span class="count-todos">{{remainingTasksCount(id)}}</span>
+        </strong> Items Left
+    </div>

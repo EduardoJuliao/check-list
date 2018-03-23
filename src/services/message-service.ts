@@ -7,9 +7,7 @@ export class MessageService {
 
     constructor(public iziToast: Ng2IzitoastService,
         private translate: TranslateService) {
-        iziToast.settings({
-            position: "topCenter",
-        })
+        
     }
 
     public success(message: string): void {

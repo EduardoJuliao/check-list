@@ -1,5 +1,7 @@
+import { TaskListComponent } from './../tasklist/tasklist-component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
 
 /** Perfect scrollbar */
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
@@ -13,16 +15,17 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'; 
 
-
 import { AppComponent } from './app.component';
-
+import { TaskService } from '../services/task-service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TaskListComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     MalihuScrollbarModule.forRoot(),
     Ng2IziToastModule,
     HttpClientModule,
@@ -37,7 +40,8 @@ import { AppComponent } from './app.component';
     })
   ],
   providers: [
-    MessageService
+    MessageService,
+    TaskService
   ],
   bootstrap: [AppComponent]
 })
